@@ -1,0 +1,66 @@
+body{
+    background-color: rgba(189, 183, 107, 0.734);
+}
+
+body{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    margin-right:20px;
+}
+#guess{
+    width:100%;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#alphabet li{
+    list-style-type: none;
+    font-size:30px;
+    display:inline;
+    margin-left:20px;
+}
+.but{
+    width:50px;
+    height:50px;
+    background-color: burlywood;
+    font-size:17px ;
+    margin-bottom:15px;
+
+    &:hover{
+        background-color: cornsilk;
+        border-radius: 40%;
+        color: black;
+       cursor: pointer;
+       margin-bottom:15px;
+    }
+}
+.active{
+    background-color: gray;
+    color:rgba(128, 128, 128, 0.782);
+   width:50px;
+   height: 50px;
+}
+.button-reset{
+   padding-left:40px;
+   padding-top: 10px;
+   padding-right:40px;
+   background-color: rgba(255, 255, 255, 0.558);
+   padding-bottom: 10px;
+    &:hover{
+        background-color: rgba(0, 0, 0, 0.938);
+        color: white;
+        border-color: 2px solid white;
+        cursor:pointer;
+    }
+}
+li{
+    list-style-type: none;
+    display:inline;
+    margin:5px;
+}
+.guessword{
+    font-size:20px;
+}
