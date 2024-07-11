@@ -18,7 +18,7 @@ categories = [
         "bajrangi-bhaijaan",
         "kuch-kuch-hota-hai",
         "pathaan",
-        "brahmāstra:part-one-shiva",
+        "brahmastra:part-one-shiva",
         "dilwale",
         "bhediya"
     ],
@@ -76,8 +76,8 @@ var result=()=>{
     for(var i=0;i<word.length;i++){
         var list=document.createElement("li");
         list.setAttribute("class","guessword");
-        if(word[i]=="-"){
-        list.innerHTML="-";
+        if(word[i]=="-" || word[i]==":"){
+        list.innerHTML=word[i];
         space++;
         }
         else
